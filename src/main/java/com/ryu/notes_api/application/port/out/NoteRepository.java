@@ -9,5 +9,5 @@ public interface NoteRepository {
     Note save (Note note);
     Optional<Note> findById (Long id);
     void deleteById (Long id);
-    List<Note> finAll ();
+    List<Note> findAll ();
 }
