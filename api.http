@@ -1,0 +1,26 @@
+//pruebas
+POST http://localhost:8080/api/notes
+    Content-Type: application/json
+
+    {
+        "title": "Nota 2",
+        "body": "Contenido de la nota 2"
+    }
+
+
+###pruebas de get
+
+GET  http://localhost:8080/api/notes
+
+
+###pruebas de put
+PUT http://localhost:8080/api/notes/1
+    Content-Type: application/json
+
+    {
+        "title": "Nota 1",
+        "body": "Contenido de la nota 1"
+    }
+
+###prueba de deleted
+DELETE http://localhost:8080/api/notes/2
