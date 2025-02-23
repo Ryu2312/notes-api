@@ -3,8 +3,7 @@ POST http://localhost:8080/api/notes
     Content-Type: application/json
 
     {
-        "title": "Nota 2",
-        "body": "Contenido de la nota 2"
+        "body": "Contenido de la nota 5"
     }
 
 
@@ -14,12 +13,12 @@ GET  http://localhost:8080/api/notes
 
 
 ###pruebas de put
-PUT http://localhost:8080/api/notes/1
+PUT http://localhost:8080/api/notes/5
     Content-Type: application/json
 
     {
-        "title": "Nota 1",
-        "body": "Contenido de la nota 1"
+    "important" : true
+       
     }
 
 ###prueba de deleted
