@@ -7,6 +7,7 @@ public class Note {
     private String title;
     private String body;
     private LocalDateTime creationDate;
+    private LocalDateTime updateDate;
     private boolean important;
     private boolean pending;
 
@@ -15,6 +16,7 @@ public class Note {
         this.title = title;
         this.body = body;
         this.creationDate = creationDate;
+        this.updateDate = creationDate;
         this.important = important;
         this.pending = pending;
     }
@@ -35,6 +37,10 @@ public class Note {
         return creationDate;
     }
 
+    public LocalDateTime getUpdateDate () {
+        return updateDate;
+    } 
+    
     public boolean getImportant () {
         return important;
     }
@@ -42,4 +48,5 @@ public class Note {
     public boolean getPending () {
         return pending;
     }
+
 }
