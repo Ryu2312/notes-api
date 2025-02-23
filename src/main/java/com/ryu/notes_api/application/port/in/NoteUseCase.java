@@ -6,7 +6,7 @@ import com.ryu.notes_api.application.dto.NoteCreateDTO;
 import com.ryu.notes_api.application.dto.NoteUpdateDTO;
 import com.ryu.notes_api.domain.model.Note;
 
-public interface NotaUseCase {
+public interface NoteUseCase {
     Note newNote (NoteCreateDTO noteCreateDTO);
     Note updateNote (NoteUpdateDTO noteUpdateDTO);
     void deleteNote (Long id);
