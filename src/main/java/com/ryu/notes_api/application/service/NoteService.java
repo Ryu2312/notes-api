@@ -3,6 +3,7 @@ package com.ryu.notes_api.application.service;
 import java.time.LocalDateTime;
 import java.util.List;
 
+import com.ryu.notes_api.adapters.in.NoteMapper;
 import com.ryu.notes_api.application.dto.NoteCreateDTO;
 import com.ryu.notes_api.application.dto.NoteUpdateDTO;
 import com.ryu.notes_api.application.port.in.NoteUseCase;
@@ -19,9 +20,7 @@ public class NoteService implements NoteUseCase {
 
     @Override
     public Note newNote(NoteCreateDTO noteCreateDTO) {
-       Note note = new Note();
-       note.setTitle(noteCreateDTO.getTitle());
-       note.setBody(noteCreateDTO.getBody());
+       Note note = NoteMapper.fromCreateDTO(noteCreateDTO);
        note.setCreationDate(LocalDateTime.now());
        note.setUpdateDate(LocalDateTime.now());
        note.setPending(false);
