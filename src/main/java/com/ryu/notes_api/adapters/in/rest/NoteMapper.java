@@ -1,4 +1,4 @@
-package com.ryu.notes_api.adapters.in;
+package com.ryu.notes_api.adapters.in.rest;
 
 import com.ryu.notes_api.application.dto.NoteCreateDTO;
 import com.ryu.notes_api.domain.model.Note;

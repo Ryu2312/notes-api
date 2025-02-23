@@ -3,13 +3,16 @@ package com.ryu.notes_api.application.service;
 import java.time.LocalDateTime;
 import java.util.List;
 
-import com.ryu.notes_api.adapters.in.NoteMapper;
+import org.springframework.stereotype.Service;
+
+import com.ryu.notes_api.adapters.in.rest.NoteMapper;
 import com.ryu.notes_api.application.dto.NoteCreateDTO;
 import com.ryu.notes_api.application.dto.NoteUpdateDTO;
 import com.ryu.notes_api.application.port.in.NoteUseCase;
 import com.ryu.notes_api.application.port.out.NoteRepository;
 import com.ryu.notes_api.domain.model.Note;
 
+@Service
 public class NoteService implements NoteUseCase {
 
     private final NoteRepository noteRepository;
@@ -57,7 +60,7 @@ public class NoteService implements NoteUseCase {
 
     @Override
     public List<Note> listNote () {
-        return noteRepository.finAll();
+        return noteRepository.findAll();
     }
     
 }
