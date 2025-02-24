@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import com.ryu.notes_api.adapters.in.rest.NoteMapper;
 import com.ryu.notes_api.application.dto.NoteCreateDTO;
@@ -12,7 +13,7 @@ import com.ryu.notes_api.application.dto.NoteUpdateDTO;
 import com.ryu.notes_api.application.port.in.NoteUseCase;
 import com.ryu.notes_api.application.port.out.NoteRepository;
 import com.ryu.notes_api.domain.model.Note;
-import com.ryu.utils.Utils;
+import com.ryu.notes_api.utils.Utils;
 
 @Service
 public class NoteService implements NoteUseCase  {

@@ -1,4 +1,4 @@
-package com.ryu.utils;
+package com.ryu.notes_api.utils;
 
 import org.springframework.beans.BeanWrapper;
 import org.springframework.beans.BeanWrapperImpl;
